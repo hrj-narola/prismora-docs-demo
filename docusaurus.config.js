@@ -39,21 +39,21 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '88804DFC1C87E60B',
+      },
+    },
+  ],
 
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        headTags: [
-          {
-            tagName: 'meta',
-            attributes: {
-              name: 'algolia-site-verification',
-              content: '88804DFC1C87E60B',
-            },
-          },
-        ],
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.

@@ -134,7 +134,7 @@ const config = {
       algolia: {
         appId: '33MT5IJ348',
         apiKey: 'a7315a88db376680f7fe70c70e0a063c',
-        indexName: 'prismora_docs_demo_vercel_app_p3bn7sufg6_articles',
+        indexName: 'prismora_docs_demo_vercel_app_33mt5ij348_pages',
 
         contextualSearch: true,
 

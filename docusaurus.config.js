@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://prismora-docs-demo.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -45,10 +45,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        metadata: [
+        headTags: [
           {
-            name: 'algolia-site-verification',
-            content: '88804DFC1C87E60B',
+            tagName: 'meta',
+            attributes: {
+              name: 'algolia-site-verification',
+              content: '88804DFC1C87E60B',
+            },
           },
         ],
         docs: {

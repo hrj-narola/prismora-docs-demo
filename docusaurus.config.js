@@ -132,8 +132,8 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       algolia: {
-        appId: 'P3BN7SUFG6',
-        apiKey: '8f6e3f086f0d0ee0e5260c7fdfcd51be',
+        appId: '33MT5IJ348',
+        apiKey: 'a7315a88db376680f7fe70c70e0a063c',
         indexName: 'prismora_docs_demo_vercel_app_p3bn7sufg6_articles',
 
         contextualSearch: true,

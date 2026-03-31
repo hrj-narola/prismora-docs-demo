@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -117,6 +117,15 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      algolia: {
+        appId: '50D4JR5NWJ',
+        apiKey: '813ffc0facc528fa93f09f2b1a2ed581',
+        indexName: 'YOUR_INDEX_NAME',
+
+        contextualSearch: true,
+
+        searchParameters: {},
       },
     }),
 };

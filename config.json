@@ -1,0 +1,21 @@
+{
+  "index_name": "prismora_docs_demo_vercel_app_p3bn7sufg6_articles",
+  "start_urls": [
+    "https://prismora-docs-demo.vercel.app/docs"
+  ],
+  "sitemap_urls": [
+    "https://prismora-docs-demo.vercel.app/sitemap.xml"
+  ],
+  "selectors": {
+    "lvl0": {
+      "selector": ".menu__link--active",
+      "default_value": "Documentation"
+    },
+    "lvl1": ".markdown h1",
+    "lvl2": ".markdown h2",
+    "lvl3": ".markdown h3",
+    "lvl4": ".markdown h4",
+    "lvl5": ".markdown h5",
+    "content": ".markdown p, .markdown li"
+  }
+}

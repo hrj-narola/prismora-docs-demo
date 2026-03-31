@@ -1,0 +1,40 @@
+---
+sidebar_position: 3
+---
+
+# Analyze
+
+The **Analyze** step tells Prismora to interpret the inputs you uploaded and prepare the project context used for setup and test generation.
+
+## What Analyze typically does
+
+- Reads and understands each resource type (code / requirements / design / docs).
+- Identifies the relevant scope for the project.
+- Produces internal context that is then used by **Finish Setup** and the testing workflow.
+
+## Steps
+
+1. In your project, select **Analyze**.
+2. Wait for the analysis run to complete.
+3. Review the output:
+   - What Prismora recognized
+   - What it derived from each input
+   - Any detected items or warnings
+
+## When to re-run Analyze
+
+Re-run if:
+
+- You uploaded new/updated resources.
+- You suspect the wrong resource type was selected.
+- You see warnings that indicate missing or mismatched inputs.
+
+## Common issues
+
+- **Analysis completes but results look incomplete**: check that all required input sources are present and correctly typed.
+- **Analysis fails**: try with smaller inputs first (especially for large code or documents).
+
+## Next
+
+- Continue with: [Finish Setup](/docs/support/project-lifecycle/finish-setup)
+

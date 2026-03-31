@@ -45,6 +45,12 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        metadata: [
+          {
+            name: 'algolia-site-verification',
+            content: '88804DFC1C87E60B',
+          },
+        ],
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.

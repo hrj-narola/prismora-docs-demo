@@ -106,6 +106,10 @@ const config = {
             position: 'left',
             label: 'Support',
           },
+          {
+            type: 'search',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -128,9 +132,9 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       algolia: {
-        appId: '50D4JR5NWJ',
-        apiKey: '813ffc0facc528fa93f09f2b1a2ed581',
-        indexName: 'YOUR_INDEX_NAME',
+        appId: 'P3BN7SUFG6',
+        apiKey: '8f6e3f086f0d0ee0e5260c7fdfcd51be',
+        indexName: 'prismora_docs_demo_vercel_app_p3bn7sufg6_articles',
 
         contextualSearch: true,
 

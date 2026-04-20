@@ -1,0 +1,34 @@
+---
+sidebar_position: 4
+---
+
+# Live Console
+
+After triggering a test run, Prismora redirects you to the **Live Console**. This powerful interface grants you real-time visibility into the execution of your automated test cases.
+
+## The Dual-Pane View
+
+The Live Console comprises two interconnected panes that update synchronously as the test operates.
+
+### Test Execution Log (Left Pane)
+
+This terminal-style window displays the underlying backend logs of the current execution:
+- Extracts critical execution data including `Task ID`, `Session ID`, and `Test Run ID`.
+- Explicitly lists testing metadata such as Priority parameters and connected Database identifiers.
+- Chronicles step-by-step activity: showing exact timestamps for when each task is initialized and completed.
+- *Pro-tip*: You can download these raw logs using the **Download Logs** button in the top right for external auditing.
+
+### Live Browser View (Right Pane)
+
+The adjacent graphical pane provides a literal window into the remote testing environment:
+- As the execution log updates on the left, you can visually observe the actual browser interactions occurring on the right.
+- A **Browser Active** badge confirms the connection status.
+- This allows you to witness UI behavior, visual layout fallbacks, and real-time interactions precisely as a user would.
+
+## Controlling the Run
+
+During a live execution, you have functional controls available:
+- **Stop**: Immediately abort the testing sequence if you identify a fatal layout error or logic flaw.
+- **Record Test**: Trigger specialized visual recordings (if configured) for later playback.
+
+Once the progress bar in the top right corner hits 100%, the run is complete, and you can proceed to evaluate the post-execution dashboard.

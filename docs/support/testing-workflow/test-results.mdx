@@ -2,31 +2,38 @@
 sidebar_position: 5
 ---
 
-# Test Results & Action Buttons
+# Test Results Dashboard
 
-After **Test Run** completes, Prismora shows the outcome of each test and supporting logs/errors (when available).
+Upon completion of a test run, all historical and analytic data is sent directly to the **Test Results** tab. This dashboard breaks down exactly what happened, simplifying continuous integration assessments.
 
-## At a glance
+## AI Insights
 
-- Overall status (pass/fail/blocked counts)
-- Per-test status and metadata
-- Logs and error details (when available)
+At the very top of the results page, the platform will prominently display an **AI Insight** banner if significant patterns are recognized. For example, it will immediately alert you if:
+> *1 new regression detected. All are related to functional module.*
 
-## “Particular Buttons” you may see
+## Top-Level Metrics
 
-Button names can vary by UI version, but typical actions include:
+A summary ribbon provides an instant snapshot of your testing health:
+- **Total Cases**: The number of tests executed across associated modules.
+- **Passed**: The subset of tests that successfully completed.
+- **Failed**: Tests blocked from completion due to errors or unexpected behavior.
+- **Skipped / Needs Re-check / Slowest Test**: Insights for optimizing pipeline speed and consistency.
 
-- `Filter` / `Search` to find failing tests
-- `Rerun` to re-execute selected tests
-- `View Details` to open a failing test’s information and logs
-- `Export` to download results for sharing or reporting
-- `Create Follow-up` (or similar) to convert failures into actionable work
+## Detailed Run Analytics
 
-:::tip Suggested workflow
-Filter to failures first, then open details for the top-priority failing tests.
-:::
+The lower half of the dashboard allows you to interrogate specific test runs.
 
-## Next
+### Run History
 
-- Continue with: [Generate Test Cases: Input Sources](/docs/support/generate-test-cases-sources)
+- Select any specific **Test Run** block from the left panel (bearing an ID like `20040849`) to pull up its exact analytics.
+- It displays the execution timeline, date, pass/fail percentage, and whether it is actively running or completed.
 
+### Changes Since Last Run
+
+The system contrasts the fresh data against historical runs to populate this panel:
+- **New Failures**: Issues that arose in the current execution that previously passed.
+- **Fixed**: Issues from a previous run that now execute perfectly.
+- **Repeated Issues**: Persistent bugs failing consecutive runs.
+- **Needs Re-check**: Sporadic or non-deterministic test results yielding warnings.
+
+You can utilize the master filter row at the bottom of the dashboard (`All Status`, `All Modules`, `All Suites`) to dissect specific components and evaluate the test cases associated with New Failures or Fixed statuses.

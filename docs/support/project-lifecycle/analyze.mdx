@@ -1,40 +1,21 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Analyze
+# Platform Analysis & Project Summary
 
-The **Analyze** step tells Prismora to interpret the inputs you uploaded and prepare the project context used for setup and test generation.
+As you feed information to the Chatbot, the right-side panel will automatically transition to an **AI-generated project analysis**. The platform synthesizes your data into organized compartments.
 
-## What Analyze typically does
+## Analysis Components
 
-- Reads and understands each resource type (code / requirements / design / docs).
-- Identifies the relevant scope for the project.
-- Produces internal context that is then used by **Finish Setup** and the testing workflow.
+- **Authorizations**: The system automatically detects if external connections or specific integrations are required for your workflows (e.g., "No Connections Required").
+- **Project Summary**: A polished, AI-authored overview detailing your application's use-cases, primary features, and target audience. 
+- **Tech Stack**: The AI detects and enumerates your core technologies (e.g., HTML, MySQL, custom modules, external APIs).
 
-## Steps
+## Review and Refine via Chatbot
 
-1. In your project, select **Analyze**.
-2. Wait for the analysis run to complete.
-3. Review the output:
-   - What Prismora recognized
-   - What it derived from each input
-   - Any detected items or warnings
+The initial generated analysis acts as a living document:
 
-## When to re-run Analyze
-
-Re-run if:
-
-- You uploaded new/updated resources.
-- You suspect the wrong resource type was selected.
-- You see warnings that indicate missing or mismatched inputs.
-
-## Common issues
-
-- **Analysis completes but results look incomplete**: check that all required input sources are present and correctly typed.
-- **Analysis fails**: try with smaller inputs first (especially for large code or documents).
-
-## Next
-
-- Continue with: [Finish Setup](/docs/support/project-lifecycle/finish-setup)
-
+- Review the Summary, Authorizations, and Tech Stack ensuring everything aligns with your actual platform.
+- If you notice a missing third-party integration or an incorrectly summarized flow, **simply tell the chatbot**. 
+- The AI will digest your feedback and instantly update the Project Summary to reflect the correct state.

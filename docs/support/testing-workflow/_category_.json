@@ -2,7 +2,6 @@
   "label": "Testing Workflow",
   "position": 5,
   "link": {
-    "type": "generated-index",
-    "description": "Set test case count, generate tests, run them, and review results."
+    "type": "generated-index"
   }
 }

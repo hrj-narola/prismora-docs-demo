@@ -1,0 +1,31 @@
+---
+sidebar_position: 3
+---
+
+# Test Case Details & Editing
+
+When you click on a specific test case from the main list, a detailed modal will appear giving you full transparency and control over the testing sequence.
+
+## Understanding the Details
+
+The top of the modal showcases:
+- **Test Case Name and Description**: Highlighting exact behavior logic.
+- **Tag Clusters**: Confirming Priority, Status, and Categorization.
+- **Metadata Pane**: Details including the origin `Source` (e.g., `Ai_multi_agent`) and the timestamp of the `Last Run`.
+
+## Reviewing and Updating Steps
+
+Prismora automatically generates the step-by-step logic required to execute a test, but you have the flexibility to update these steps to match nuanced business logic.
+
+- **Step Review**: The main window sequentially lists out the actions (e.g., `1 - Attempt to use the store locator without granting location permission.`, `2 - Observe the UI behavior and messaging.`).
+- **Edit Steps**: Click the **Edit** button at the bottom of the modal to modify any AI-generated steps. This allows you to add custom verifications or remove redundant actions.
+
+## Action Capabilities
+
+At the bottom of the details modal, several primary actions govern the lifecycle of that specific test case:
+- **Run Test**: Instantly push this individual test case to the execution queue.
+- **Edit**: Adjust the logic or steps.
+- **Duplicate**: Clone it to serve as a baseline for a closely related test scenario.
+- **Archive / Delete**: Remove the test case if it no longer applies to your project boundaries.
+
+Once you click **Run Test**, the application will transition to the Live Console.
